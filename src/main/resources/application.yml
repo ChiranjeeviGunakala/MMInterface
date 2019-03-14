@@ -1,0 +1,221 @@
+spring: 
+  application: 
+    name: SCWM-AE-HK-MaterialMaster  
+server:
+  port: 8080
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+  metrics:
+    export:
+      prometheus: 
+        enabled: true
+    distribution:
+      percentiles[http.server.requests]: 0.95, 0.99
+      percentiles-histogram[http.server.requests]: true
+      sla[http.server.requests]: 10ms, 100ms
+eureka:
+  client:
+    enabled: false
+com: 
+  oup: 
+    ae: 
+      integration: 
+        materialmaster: 
+          sap: 
+            inbound: 
+              username: SCHWMIDOC
+              password: Idoc@china33
+              ashost: HKHKOAPP09.hk.oup.com
+              sysnr: 00
+              client: 800
+              lang: EN
+            outbound: 
+              gwhost: HKHKOAPP09.hk.oup.com
+              gwserv: 3300
+              progid: HKD_CAMEL_KN_MM
+              connectionCount: 2
+          incomming:  
+            idoclocation: C:/CG/IN/SCWM/AE/${spring.application.name}/default/INCOMING-IDOC
+          retrydelay: 1800000
+          retryForKNFTP: 48
+          target: 
+            server: localhost
+            port: 21
+            username: gunakalc
+            password: ftpoup
+            folder: SCWM/AE/out
+            failedlocation: C:/CG/OUT/SCWM/AE/${spring.application.name}/default/error
+            templocation: C:/CG/OUT/SCWM/AE/${spring.application.name}/default/temp
+---
+spring: 
+  profiles: dev
+  application: 
+    name: SCWM-AE-HK-MaterialMaster  
+server:
+  port: 8080
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+  metrics:
+    export:
+      prometheus: 
+        enabled: true
+    distribution:
+      percentiles[http.server.requests]: 0.95, 0.99
+      percentiles-histogram[http.server.requests]: true
+      sla[http.server.requests]: 10ms, 100ms
+eureka:
+  client:
+    enabled: true
+    service-url:  
+      defaultZone: http://dev-oupeureka:8761/eureka/
+com: 
+  oup: 
+    ae: 
+      integration: 
+        materialmaster: 
+          sap: 
+            inbound: 
+              username: SCHWMIDOC
+              password: Idoc@china33
+              ashost: HKHKOAPP09.hk.oup.com
+              sysnr: 00
+              client: 800
+              lang: EN
+            outbound: 
+              gwhost: HKHKOAPP09.hk.oup.com
+              gwserv: sapgw00
+              progid: HKD_CAMEL_KN_MM
+              connectionCount: 2
+          incomming:  
+            idoclocation: /IN/SCWM/AE/${spring.application.name}/dev/INCOMING-IDOC
+          retrydelay: 1800000
+          retryForKNFTP: 48
+          target: 
+            server: ukftp-auto.oup.com
+            port: 21
+            username: fharbinger
+            password: farafara
+            folder: SCWM/AE/out
+            failedlocation: /OUT/SCWM/AE/${spring.application.name}/dev/error
+            templocation: /OUT/SCWM/AE/${spring.application.name}/dev/temp
+---
+spring: 
+  profiles: uat
+  application: 
+    name: SCWM-AE-HK-MaterialMaster  
+server:
+  port: 8080
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+  metrics:
+    export:
+      prometheus: 
+        enabled: true
+    distribution:
+      percentiles[http.server.requests]: 0.95, 0.99
+      percentiles-histogram[http.server.requests]: true
+      sla[http.server.requests]: 10ms, 100ms
+eureka:
+  client:
+    enabled: true
+    service-url:  
+      defaultZone: http://uat-oupeureka:8761/eureka/
+com: 
+  oup: 
+    ae: 
+      integration: 
+        materialmaster: 
+          sap: 
+            inbound: 
+              username: SCHWMIDOC
+              password: Idoc@china33
+              ashost: HKHKOAPP10.hk.oup.com
+              sysnr: 00
+              client: 300
+              lang: EN
+            outbound: 
+              gwhost: HKHKOAPP10.hk.oup.com
+              gwserv: sapgw00
+              progid: QAC_CAMEL_KN_MM
+              connectionCount: 2
+          incomming:  
+            idoclocation: /IN/SCWM/AE/${spring.application.name}/uat/INCOMING-IDOC
+          retrydelay: 1800000
+          retryForKNFTP: 48
+          target: 
+            server: ukftp-auto.oup.com
+            port: 21
+            username: fharbinger
+            password: farafara
+            folder: SCWM/AE/out
+            failedlocation: /OUT/SCWM/AE/${spring.application.name}/uat/error
+            templocation: /OUT/SCWM/AE/${spring.application.name}/uat/temp
+---
+spring: 
+  profiles: prod
+  application: 
+    name: SCWM-AE-HK-MaterialMaster  
+server:
+  port: 8080
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+  metrics:
+    export:
+      prometheus: 
+        enabled: true
+    distribution:
+      percentiles[http.server.requests]: 0.95, 0.99
+      percentiles-histogram[http.server.requests]: true
+      sla[http.server.requests]: 10ms, 100ms
+eureka:
+  client:
+    enabled: true
+    service-url:  
+      defaultZone: http://prod-oupeureka:8761/eureka/
+com: 
+  oup: 
+    ae: 
+      integration: 
+        materialmaster: 
+          sap: 
+            inbound: 
+              username: SCHWMIDOC
+              password: Idoc@china33
+              ashost: HKHKOAPP12.hk.oup.com
+              sysnr: 00
+              client: 300
+              lang: EN
+            outbound: 
+              gwhost: HKHKOAPP12.hk.oup.com
+              gwserv: sapgw00
+              progid: PRC_CAMEL_KN_MM
+              connectionCount: 2
+          incomming:  
+            idoclocation: /IN/SCWM/AE/${spring.application.name}/prod/INCOMING-IDOC
+          retrydelay: 1800000
+          retryForKNFTP: 48
+          target: 
+            server: ukftp-auto.oup.com
+            port: 21
+            username: harbinger
+            password: k12aA%2519
+            folder: SCWM/AE/out
+            failedlocation: /OUT/SCWM/AE/${spring.application.name}/prod/error
+            templocation: /OUT/SCWM/AE/${spring.application.name}/prod/temp
+            

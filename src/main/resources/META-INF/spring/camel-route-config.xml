@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:camel="http://camel.apache.org/schema/spring"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<import
+		resource="classpath:META-INF/spring/sap-endpoints-config.xml" />
+	<import
+		resource="classpath:META-INF/spring/camel-transformation-context.xml" />
+	<import
+		resource="classpath:META-INF/spring/camel-sent-to-kn-context.xml" />
+
+	<!-- DefaultUuidGenerator -->
+	<bean id="uuidGenarator"
+		class="org.apache.camel.impl.DefaultUuidGenerator"></bean>
+
+
+	<camelContext
+		xmlns="http://camel.apache.org/schema/spring">
+		<routeContextRef ref="id_Transform" />
+		<routeContextRef ref="id_SendToKN" />
+		<dataFormats>
+			<jaxb id="materialMasterJAXB"
+				contextPath="com.oup.ae.integration.materialmaster.pojo" prettyPrint="true" />
+		</dataFormats>
+		<!-- Material Master Consuming IDOC -->
+		<route id="id_Route_MainRoute">
+			<from
+				uri="sap-idoclist-server:quickstartServer:ISM_MATMAS03" />
+			<setProperty propertyName="UUID">
+				<simple>bean:uuidGenarator?method=generateUuid</simple>
+			</setProperty>
+			
+			<setProperty propertyName="FileName">
+                <simple>MATMAS-IDOC-${exchangeProperty.UUID}.xml</simple>
+            </setProperty>
+			
+			
+            <camel:to uri="log:com.oup.ae.integration.materialmaster.route?level=DEBUG&amp;showProperties=true&amp;multiline=true&amp;showHeaders=true"></camel:to>
+			<convertBodyTo type="java.lang.String" />
+			<log message="${body}" loggingLevel="INFO"
+				logName="com.oup.ae.integration.materialmaster.route" />
+			<toD id="id_send_IN_IDOC"
+				uri="file:{{com.oup.ae.integration.materialmaster.incomming.idoclocation}}?fileName=${exchangeProperty.FileName}" />
+			<to uri="direct:transformMaterialMaster" />
+			<onException id="id_MainRoute_Exception">
+				<exception>java.lang.Exception</exception>
+				<handled>
+					<constant>true</constant>
+				</handled>
+				<log logName="com.oup.ae.integration.materialmaster.route"
+					loggingLevel="ERROR"
+					message="${routeId} : Could not transport file : ${exchangeProperty.FileName}. The reason is ${exchangeProperty.CamelExceptionCaught} \n
+					The stacktrace is ${exception.stacktrace}" />
+				<toD
+					uri="file:{{com.oup.ae.integration.materialmaster.target.failedlocation}}?fileName=${exchangeProperty.FileName}" />
+
+			</onException>
+		</route>
+	</camelContext>
+
+</beans>

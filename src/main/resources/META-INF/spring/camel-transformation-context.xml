@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:camel="http://camel.apache.org/schema/spring"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<routeContext id="id_Transform"
+		xmlns="http://camel.apache.org/schema/spring">
+		<!-- Transforming the Material Master IDOC -->
+		<route id="id_Route_Transform">
+			<from uri="direct:transformMaterialMaster" />
+			<process ref="materialMasterTransfomer" />
+			<to uri="direct:materialMasterTransfomerResult" />
+			
+			<onException id="id_TransformationRoute_Exception">
+				<exception>java.lang.Exception</exception>
+				<handled>
+					<constant>true</constant>
+				</handled>
+				<toD
+					uri="file:{{com.oup.ae.integration.materialmaster.target.failedlocation}}?fileName=${exchangeProperty.FileName}" />
+				<log logName="com.oup.ae.integration.materialmaster.transform.route"
+					loggingLevel="ERROR"
+					message="${routeId} : Exception occurred during transformation of file: ${exchangeProperty.FileName}. The reason is ${exchangeProperty.CamelExceptionCaught} \n
+					The stacktrace is ${exception.stacktrace}" />
+			</onException>
+		</route>
+	</routeContext>
+
+</beans>
