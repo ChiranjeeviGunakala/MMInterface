@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
+    vc:minVersion="1.1">
+    <!-- Choose the E1MARMM based upn logic E1MARMM.MEINH=E1MARAM.MEINS -->
+    <xs:element name="Material-Master">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Transmission Header -->
+                <xs:element name="Transmission-Header" maxOccurs="1" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Country-Code">
+                                <!-- DERIVED FROM SOURCE SAP SYSTEM -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Plant-Code">
+                                <!-- E1MARCM > WERKS -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="50"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <!-- Transmission Header Ends Here -->
+                <xs:element name="Material-Num">
+                    <!-- MATNR -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="20"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Article-Desc" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Article-Language-Code">
+                                <!-- 21	E1MAKTM	SPRAS_ISO -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Article-Short-Desc">
+                                <!-- 20	E1MAKTM	MAKTX -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="70"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Article-Long-Desc">
+                                <!-- 20	E1MAKTM	MAKTX -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="70"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Media-Product" minOccurs="0">
+                    <!-- E1MARAISM	> ISMREFMDPROD -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="18"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Material-Type" minOccurs="1">
+                    <!-- E1MARAM	> MTART -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="4"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Article-Group" minOccurs="1">
+                    <!-- E1MARAM >	MATKL -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="9"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Base-Unit-of-Measure" minOccurs="1">
+                    <!-- E1MARAM > MEINS -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Net-Weight" minOccurs="1">
+                    <!-- E1MARAM	> NTGEW -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Plant" minOccurs="1">
+                    <!-- E1MARCM >	WERKS -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="4"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="FMC" minOccurs="0">
+                    <!-- E1MARCM >	MAABC -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Commodity-Code" minOccurs="1">
+                    <!-- E1MARCM >	STAWN -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="17"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Country-Origin" minOccurs="1">
+                    <!-- E1MARCM >	HERKL -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <!-- Choose the E1MARMM based upn logic E1MARMM.MEINH=E1MARAM.MEINS -->
+                <xs:element name="Unit-Of-Measure-Of-Display" minOccurs="0">
+                    <!-- E1MARMM >	MEINH -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Length" minOccurs="1">
+                    <!-- E1MARMM	> LAENG -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Width" minOccurs="1">
+                    <!-- E1MARMM	> BREIT -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Height" minOccurs="1">
+                    <!-- E1MARMM > HOEHE -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Base-Unit-of-Measure-Length" minOccurs="1">
+                    <!-- E1MARMM	> MEABM -->
+                    <!-- SAP WILL ALWAYS SEND IN CM. OTHERWISE THROW VALIDATION ERROR -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Base-Unit-of-Measure-Volume" minOccurs="1">
+                    <!-- E1MARMM	> VOLEH -->
+                    <!-- SAP WILL ALWAYS SEND IN CUBIC CM. OTHERWISE THROW VALIDATION ERROR -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Gross-Weight" minOccurs="1">
+                    <!-- E1MARMM >	BRGEW -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Base-Unit-of-Measure-Weight" minOccurs="1">
+                    <!-- E1MARMM	> GEWEI -->
+                    <!-- SAP WILL ALWAYS SEND IN KG. OTHERWISE THROW VALIDATION ERROR -->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

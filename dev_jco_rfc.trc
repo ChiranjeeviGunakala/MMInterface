@@ -1,0 +1,2690 @@
+
+**** Error file opened at 20181108 171058 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Thu Nov 08 17:10:58,432<    >RfcGetException rc (7) message: Name or password is incorrect (repeat logon)
+<RfcGetException
+
+
+
+**** Error file opened at 20181109 182927 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Fri Nov 09 18:29:27,408<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Fri Nov 09 18:29:27 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.121:58037
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Fri Nov 09 18:29:27,440<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Fri Nov 09 18:29:27 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.121:58038
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Fri Nov 09 18:29:27,440<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Fri Nov 09 18:29:27 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.121:58037
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error: [2] >Fri Nov 09 18:29:27,440<    RfcException raised by system [PC379514|HKD_CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Fri Nov 09 18:29:27 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.121:58037
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:29:27,455<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Fri Nov 09 18:29:27 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.121:58038
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error: [3] >Fri Nov 09 18:29:27,455<    RfcException raised by system [PC379514|HKD_CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Fri Nov 09 18:29:27 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.121:58038
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:29:30,623<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:29:30 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:29:32,432<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:29:32 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:29:34,546<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:29:34 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     3
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:29:38,780<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:29:38 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:29:46,413<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:29:46 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     5
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:30:02,427<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:30:02 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:30:34,438<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:30:34 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     7
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:31:38,453<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:31:38 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     8
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:33:46,479<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:33:46 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     9
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:38:02,588<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:38:02 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     10
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:46:40,357<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:46:40 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     11
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181109 185545 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Fri Nov 09 18:55:45,431<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:55:45 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:55:55,498<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:55:55 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:55:59,700<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:55:59 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 18:55:59,715<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 18:55:59 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181109 195029 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Fri Nov 09 19:50:29,628<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:50:29 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 19:50:32,236<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:50:32 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 19:50:34,726<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:50:34 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 19:50:34,726<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:50:34 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181109 195232 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Fri Nov 09 19:52:32,896<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:52:32 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 19:52:39,899<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:52:39 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 19:52:42,397<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:52:42 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 19:52:42,413<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 19:52:42 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181109 201345 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Fri Nov 09 20:13:45,302<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 20:13:45 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 20:13:47,974<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 20:13:47 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 20:13:51,402<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 20:13:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 09 20:13:51,402<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Fri Nov 09 20:13:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181112 160842 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Mon Nov 12 16:08:42,456<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:08:42 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'HKHKOAPP09.hk.oup.com' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Mon Nov 12 16:08:42,621<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:08:42 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Mon Nov 12 16:08:42,641<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:08:42 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Mon Nov 12 16:08:42,660<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:08:42 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181112 165446 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Mon Nov 12 16:54:46,101<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:54:46 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'HKHKOAPP09.hk.oup.com' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Mon Nov 12 16:54:46,226<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:54:46 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Mon Nov 12 16:54:46,251<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:54:46 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Mon Nov 12 16:54:46,314<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Mon Nov 12 16:54:46 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181113 124014 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Tue Nov 13 12:40:14,919<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Tue Nov 13 12:40:14 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'HKHKOAPP09.hk.oup.com' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 13 12:40:15,065<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Tue Nov 13 12:40:15 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 13 12:40:15,229<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Tue Nov 13 12:40:15 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 13 12:40:15,323<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Tue Nov 13 12:40:15 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181114 195204 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Wed Nov 14 19:52:04,168<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 14 19:52:04 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'HKHKOAPP09.hk.oup.com' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 14 19:52:04,371<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 14 19:52:04 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 14 19:52:04,387<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 14 19:52:04 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 14 19:52:04,403<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 14 19:52:04 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181115 115851 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Thu Nov 15 11:58:51,157<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Thu Nov 15 11:58:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'HKHKOAPP09.hk.oup.com' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Thu Nov 15 11:58:51,267<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Thu Nov 15 11:58:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Thu Nov 15 11:58:51,288<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Thu Nov 15 11:58:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Thu Nov 15 11:58:51,307<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Thu Nov 15 11:58:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181120 070049 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Tue Nov 20 07:00:49,515<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Tue Nov 20 07:00:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.96:61577
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Tue Nov 20 07:00:49,545<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Tue Nov 20 07:00:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.96:61576
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Tue Nov 20 07:00:49,582<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Tue Nov 20 07:00:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.96:61577
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Tue Nov 20 07:00:49,582<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Tue Nov 20 07:00:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.96:61576
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error: [2] >Tue Nov 20 07:00:49,582<    RfcException raised by system [PC379514|CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Tue Nov 20 07:00:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.96:61576
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error: [3] >Tue Nov 20 07:00:49,583<    RfcException raised by system [PC379514|CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Tue Nov 20 07:00:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.96:61577
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:00:51,403<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:00:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:00:54,403<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:00:54 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:00:56,404<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:00:56 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     3
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:01:00,415<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:01:00 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:01:08,406<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:01:08 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     5
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:01:24,430<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:01:24 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:01:56,424<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:01:56 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     7
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:03:00,448<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:03:00 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     8
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:05:08,868<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:05:08 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     9
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:09:24,984<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:09:24 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     10
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 07:40:33,632<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 07:40:33 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     11
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 12:46:30,978<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 12:46:30 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     12
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 13:20:40,821<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 13:20:40 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     13
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 14:34:51,569<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 14:34:51 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     14
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Tue Nov 20 15:34:54,236<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Tue Nov 20 15:34:54 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     15
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181121 130812 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Wed Nov 21 13:08:12,524<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 21 13:08:12 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'HKHKOAPP09.hk.oup.com' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:08:12,673<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 21 13:08:12 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:08:12,703<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 21 13:08:12 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:08:12,722<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Wed Nov 21 13:08:12 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181121 133026 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Wed Nov 21 13:30:26,938<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Nov 21 13:30:26 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.79:53326
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Wed Nov 21 13:30:26,941<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Nov 21 13:30:26 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.79:53325
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Wed Nov 21 13:30:26,946<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Nov 21 13:30:26 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.79:53326
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Wed Nov 21 13:30:26,946<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Nov 21 13:30:26 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.79:53325
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error: [3] >Wed Nov 21 13:30:26,946<    RfcException raised by system [PC379514|HKD_CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Nov 21 13:30:26 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.79:53326
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error: [2] >Wed Nov 21 13:30:26,946<    RfcException raised by system [PC379514|CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Nov 21 13:30:26 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.79:53325
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:30:29,947<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:30:29 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:30:31,944<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:30:31 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:30:33,955<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:30:33 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     3
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:30:39,945<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:30:39 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:30:49,957<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:30:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     5
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:31:05,948<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:31:05 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:31:37,956<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:31:37 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     7
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:32:41,966<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:32:41 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     8
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:34:49,988<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:34:49 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     9
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:39:06,035<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:39:06 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     10
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 13:47:38,148<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 13:47:38 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     11
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 14:04:42,448<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 14:04:42 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     12
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 14:56:28,952<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 14:56:28 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     13
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Nov 21 15:56:31,287<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Nov 21 15:56:31 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     14
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20181130 155940 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Fri Nov 30 15:59:40,990<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Fri Nov 30 15:59:40 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'HKHKOAPP09.hk.oup.com' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 30 15:59:41,166<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Fri Nov 30 15:59:41 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 30 15:59:41,192<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=quickstartDest ASHOST=HKHKOAPP09.hk.oup.com SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Fri Nov 30 15:59:41 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri Nov 30 15:59:41,216<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       hostname 'HKHKOAPP09.hk.oup.com' unknown
+TIME        Fri Nov 30 15:59:41 2018
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      nixxhl.cpp
+LINE        193
+DETAIL      NiHLGetNodeAddr: hostname cached as unknown
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20190213 213316 India Standard Time Rel. 3.0.18 (2018-03-23) [721.1016]
+Error:  >Wed Feb 13 21:33:16,129<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Feb 13 21:33:16 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.105:63754
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Wed Feb 13 21:33:16,131<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Feb 13 21:33:16 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.105:63755
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Wed Feb 13 21:33:16,135<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Feb 13 21:33:16 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.105:63754
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error:  >Wed Feb 13 21:33:16,135<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Feb 13 21:33:16 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.105:63755
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+
+Error: [2] >Wed Feb 13 21:33:16,135<    RfcException raised by system [PC379514|HKD_CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Feb 13 21:33:16 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.105:63754
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error: [3] >Wed Feb 13 21:33:16,135<    RfcException raised by system [PC379514|HKD_CAMEL_KN_MM]:
+	message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner 'HKHKOAPP09.hk.oup.com:3300' broken
+TIME        Wed Feb 13 21:33:16 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5088
+DETAIL      NiIRead: P=10.34.169.1:3300; L=10.128.220.105:63755
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:33:19,133<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:33:19 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     1
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:33:21,144<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:33:21 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:33:23,133<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:33:23 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     3
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:33:27,133<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:33:27 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     4
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:33:35,137<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:33:35 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     5
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:33:51,151<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:33:51 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     6
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:34:23,146<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:34:23 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     7
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:35:27,293<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:35:27 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     8
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:37:35,353<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:37:35 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     9
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:41:51,547<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:41:51 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     10
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 21:50:23,745<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 21:50:23 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     11
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 22:07:27,945<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 22:07:27 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     12
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Wed Feb 13 22:41:36,304<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Wed Feb 13 22:41:36 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     13
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Thu Feb 14 07:24:23,706<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Thu Feb 14 07:24:23 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     14
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+Error:  >Thu Feb 14 11:56:06,807<    RfcException:
+	message: Connect to SAP gateway failed
+	Connection parameters: PROGID=HKD_CAMEL_KN_MM GWHOST=HKHKOAPP09.hk.oup.com GWSERV=3300
+
+ERROR       partner 'HKHKOAPP09.hk.oup.com:3300' not reached
+TIME        Thu Feb 14 11:56:06 2019
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.34.169.1:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     15
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:camel="http://camel.apache.org/schema/spring"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<routeContext id="id_SendToKN"
+		xmlns="http://camel.apache.org/schema/spring">
+		<!-- Marshaling the Transformed IDOC and sending to FTP server -->
+
+		<route id="id_Route_SendToKN">
+			<from uri="direct:materialMasterTransfomerResult" />
+			<marshal ref="materialMasterJAXB" />
+
+			<toD id="id_send_OUT_IDOC"
+				uri="file:{{com.oup.ae.integration.materialmaster.target.templocation}}?fileName=${exchangeProperty.FileName}" />
+
+
+			<camel:pollEnrich>
+				<simple>file:{{com.oup.ae.integration.materialmaster.target.templocation}}?fileName=${exchangeProperty.FileName}&amp;move=.processed</simple>
+			</camel:pollEnrich>
+
+			<log message="uploading the file to FTP server"
+				loggingLevel="INFO" logName="com.oup.ae.integration.materialmaster.sendtokn.route" />
+
+			<toD id="idSendToKNFolder"
+				uri="ftp://{{com.oup.ae.integration.materialmaster.target.username}}@{{com.oup.ae.integration.materialmaster.target.server}}:{{com.oup.ae.integration.materialmaster.target.port}}/{{com.oup.ae.integration.materialmaster.target.folder}}?password={{com.oup.ae.integration.materialmaster.target.password}}&amp;binary=true&amp;throwExceptionOnConnectFailed=true&amp;maximumReconnectAttempts=0&amp;passiveMode=true" />
+
+			<log message="File has been send to FTP Server "
+				loggingLevel="INFO" logName="com.oup.ae.integration.materialmaster.sendtokn.route" />
+
+			<onException id="id_SendToKN_OnFTPException">
+				<exception>org.apache.camel.component.file.GenericFileOperationFailedException</exception>
+				<redeliveryPolicy maximumRedeliveries="{{com.oup.ae.integration.materialmaster.retryForKNFTP}}"
+					redeliveryDelay="{{com.oup.ae.integration.materialmaster.retrydelay}}" retryAttemptedLogLevel="WARN"  logRetryAttempted="true" />
+				<handled>
+					<constant>true</constant>
+				</handled>
+				<log logName="com.oup.ae.integration.materialmaster.sendtokn.route"
+					loggingLevel="ERROR"
+					message="${routeId} : Could not transport file: ${exchangeProperty.FileName}. The reason is ${exchangeProperty.CamelExceptionCaught} \n
+					The stacktrace is ${exception.stacktrace}" />
+				<toD
+					uri="file:{{com.oup.ae.integration.materialmaster.target.failedlocation}}?fileName=${exchangeProperty.FileName}" />
+
+			</onException>
+			<onException id="id_SendToKN_Exception">
+				<exception>java.lang.Exception</exception>
+				<handled>
+					<constant>true</constant>
+				</handled>
+				<log logName="com.oup.ae.integration.materialmaster.sendtokn.route"
+					loggingLevel="ERROR"
+					message="${routeId} : Could not transport file: ${exchangeProperty.FileName}. The reason is ${exchangeProperty.CamelExceptionCaught} \n
+					The stacktrace is ${exception.stacktrace}" />
+				<toD
+					uri="file:{{com.oup.ae.integration.materialmaster.target.failedlocation}}?fileName=${exchangeProperty.FileName}" />
+
+			</onException>
+		</route>
+	</routeContext>
+
+</beans>
